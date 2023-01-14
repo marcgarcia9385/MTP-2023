@@ -397,7 +397,7 @@ prediction_data_2_safe <- prediction_data_2 %>%
                y = ~temp, 
                z = ~osm, 
                color = ~Class, 
-               colors = c('springgreen4', 'firebrick')))
+               colors = c('firebrick', 'springgreen4')))
 
 # 4D plot (safe predictions)
 

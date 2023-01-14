@@ -83,8 +83,8 @@ ggplot(data = data, mapping = aes(x = qvcd)) +
   theme_bw() +
   ylim(c(0, 25)) +
   scale_x_continuous(breaks = round(seq(min(data$qvcd), max(data$qvcd), by = 5), 1)) +
-  ggtitle(label = expression('Distribution of avg '*beta)) +
-  labs(x = expression('avg '*beta*' [mM lactate/day]'), 
+  ggtitle(label = expression('Distribution of '*beta)) +
+  labs(x = expression(beta*' [mM lactate/day]'), 
        y = 'count') +
   theme(axis.title.y = element_text(vjust = + 3),
         axis.title.x = element_text(vjust = -0.75))
@@ -107,7 +107,7 @@ ggplot(mapping = aes(sample = data$qvcd)) +
   stat_qq_point(size = 2) +
   stat_qq_line() +
   theme_bw() +
-  ggtitle(label = expression('Q-Q plot of avg '*beta)) +
+  ggtitle(label = expression('Q-Q plot of  '*beta)) +
   labs(x = 'Theoretical quantiles',
        y = 'Sample quantiles') +
   theme(axis.title.y = element_text(vjust = + 3),

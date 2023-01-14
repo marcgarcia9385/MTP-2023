@@ -6,7 +6,7 @@
 
 # 0A) Setting working directory
 
-setwd('C:/Users/marcg/OneDrive/Escritorio/MTP')
+setwd('C:/Users/marcg/OneDrive/Escritorio/MTP-2023')
 
 # 0B) Installing & loading packages from CRAN
 
@@ -86,7 +86,7 @@ total_set <- data
 # 2) Scaling/normalization
 
 preproc_1 <- preProcess(total_set, 
-                         method = c('range'))
+                        method = c('range'))
 
 total_set <- predict(object = preproc_1, 
                      newdata = total_set)
